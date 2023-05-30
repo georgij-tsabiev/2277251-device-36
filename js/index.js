@@ -52,3 +52,25 @@ tabButtons.forEach((button, index) => {
     tabsDescriptionItem[index].classList.add('tabs-description-item-active');
   });
 });
+
+/* Modal window */
+
+const modal = document.querySelector('.modal-container');
+const btn = document.querySelector('.delivery-info-link');
+const closeBtn = document.querySelector('.modal-close-button');
+
+btn.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modal.style.display = "flex";
+});
+
+closeBtn.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modal.style.display = "none";
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
