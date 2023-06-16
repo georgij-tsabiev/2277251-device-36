@@ -38,13 +38,13 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-width: 1440px;
   min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   background-color: #ffffff;
   color: #000000;
+  padding: 0 40px;
 }
 
 .visually-hidden {
